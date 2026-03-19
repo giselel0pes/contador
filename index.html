@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Contador</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Fitness Tracker</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div class="container">
-    <h1>Contador</h1>
-    <h2 id="numero">0</h2>
-    
-    <div class="botoes">
-    <button onclick="aumentar()">+</button>
-    <button onclick="diminuir()">-</button>
-    </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+        
+        <h1>💪 Fitness Tracker</h1>
+        
+        <h2>⚖️ Peso</h2>
+            
+        <input type="number" id="peso" placeholder="Peso atual (kg)" >   
+        <input type="number" id="meta" placeholder="Meta de peso (kg)" >   
+           
+        <button onclick="salvarPeso()">Salvar</button>
+
+        <p id="resultado"></p>
+
+        <h2>💧 Água</h2>
+
+<p id="agua">0 L / 3L</p>
+
+<button onclick="diminuirAgua()">-</button>
+<button onclick="aumentarAgua()">+</button>
+
+<div class="barra">
+        <div id="progresso"></div>
+        </div>
+
+        <script src="script.js"></script>
+</body>  
 </html>
+
